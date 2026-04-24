@@ -87,6 +87,10 @@ https://proyecto-full-stack-backend-21151.onrender.com/api-docs
 
 - # CORS
 - El frontend está publicado en Netlify y el backend en Render, por lo que el servidor habilita CORS para permitir peticiones fetch() entre dominios distintos.
+
+# Imagen de la pagina 
+<img width="1238" height="660" alt="image" src="https://github.com/user-attachments/assets/68a8341d-5048-47b4-942d-e8cc4847113d" />
+
 #  Estructura del proyecto
 
 ```txt
