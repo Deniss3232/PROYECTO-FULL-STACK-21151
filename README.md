@@ -71,3 +71,20 @@ PROYECTO-FULL-STACK-21151/
 │── app.js
 │── README.md
 │── .gitignore
+
+# 🔗 Enlaces importantes
+
+## Sitio web
+https://series-tracker-21151.netlify.app/
+
+## Repositorio Frontend
+https://github.com/Deniss3232/PROYECTO-FULL-STACK-21151
+
+## Repositorio Backend
+https://github.com/Deniss3232/PROYECTO-FULL-STACK-BACKEND-21151
+
+## API Backend
+https://proyecto-full-stack-backend-21151.onrender.com
+
+## Swagger Docs
+https://proyecto-full-stack-backend-21151.onrender.com/api-docs
