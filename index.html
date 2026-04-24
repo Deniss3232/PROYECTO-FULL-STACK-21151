@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Series Tracker</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="hero">
+    <div>
+      <p class="tag">Series Tracker</p>
+      <h1>Tu lista de series</h1>
+      <p class="subtitle">
+        Cliente hecho con HTML, CSS y JavaScript vanilla consumiendo una API REST publicada en Render.
+      </p>
+    </div>
+  </header>
+
+  <main class="contenedor">
+    <section class="panel controles">
+      <input id="busqueda" type="text" placeholder="Buscar por nombre..." />
+
+      <select id="orden">
+        <option value="id">Ordenar por ID</option>
+        <option value="nombre">Ordenar por nombre</option>
+        <option value="genero">Ordenar por género</option>
+        <option value="temporadas">Ordenar por temporadas</option>
+      </select>
+
+      <select id="direccion">
+        <option value="asc">Ascendente</option>
+        <option value="desc">Descendente</option>
+      </select>
+
+      <button id="btnBuscar">Buscar</button>
+      <button id="btnCSV">Exportar CSV</button>
+    </section>
+
+    <section class="panel">
+      <h2 id="tituloFormulario">Agregar serie</h2>
+
+      <form id="formularioSerie">
+        <input type="hidden" id="serieId" />
+
+        <label>Nombre</label>
+        <input id="nombre" type="text" required />
+
+        <label>Descripción</label>
+        <textarea id="descripcion" required></textarea>
+
+        <label>Género</label>
+        <input id="genero" type="text" required />
+
+        <label>Temporadas</label>
+        <input id="temporadas" type="number" min="1" required />
+
+        <label>URL de imagen</label>
+        <input id="imagen" type="url" required />
+
+        <div class="acciones">
+          <button type="submit">Guardar serie</button>
+          <button type="button" id="btnCancelar" class="secundario">Cancelar edición</button>
+        </div>
+      </form>
+    </section>
+
+    <section>
+      <div class="encabezado-lista">
+        <h2>Series registradas</h2>
+        <p id="contador"></p>
+      </div>
+
+      <div id="listaSeries" class="grid"></div>
+
+      <div class="paginacion">
+        <button id="btnAnterior">Anterior</button>
+        <span id="paginaActual">Página 1</span>
+        <button id="btnSiguiente">Siguiente</button>
+      </div>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
