@@ -61,7 +61,32 @@ https://proyecto-full-stack-backend-21151.onrender.com/api-docs
 - Tema oscuro elegante
 
 ---
+#  como correr local mente 
+- clonar repositorio git clone https://github.com/Deniss3232/PROYECTO-FULL-STACK-21151.git
+- entrar a la carpeta cd PROYECTO-FULL-STACK-21151
+- ejecutar servidor locar python -m http.server 5500
+- abrir en el navegador http://localhost:5500
 
+# Funcionalidades 
+- Ver series registradas.
+- Crear nuevas series.
+- Editar series existentes.
+- Eliminar series.
+- Buscar series por nombre.
+- Ordenar resultados.
+- Exportar CSV.
+- Mostrar imágenes.
+- Interfaz responsive.
+
+# Endpoints 
+- GET /series
+- GET /series/:id
+- POST /series
+- PUT /series/:id
+- DELETE /series/:id
+
+- # CORS
+- El frontend está publicado en Netlify y el backend en Render, por lo que el servidor habilita CORS para permitir peticiones fetch() entre dominios distintos.
 #  Estructura del proyecto
 
 ```txt
@@ -88,3 +113,9 @@ https://proyecto-full-stack-backend-21151.onrender.com
 
 ## Swagger Docs
 https://proyecto-full-stack-backend-21151.onrender.com/api-docs
+
+"""
+
+# Reflexion
+Este frontend permitió aplicar consumo de APIs REST usando JavaScript puro. También ayudó a comprender cómo separar interfaz y servidor en una arquitectura Full Stack real.
+
